@@ -1,0 +1,291 @@
+html {
+    background-color: var(--bg-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 50px;
+    padding-top: 50px;
+    text-align: left;
+}
+
+/* Headings */
+h1 { color: var(--accent-color-dark); font-size: 48px; }
+h2 { color: var(--accent-color-medium); }
+h3 { color: var(--accent-color-darkest); }
+
+p { font-size: 18px; }
+
+/* Buttons */
+button {
+    background-color: #ec4899;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #db2777;
+}
+
+/* Navbar */
+.navbar ul {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--accent-color-darkest);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.dark-mode .navbar ul {
+    background-color: #000;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 🔥 centers nicely */
+    gap: 10px;
+}
+
+.navbar ul li a,
+#theme-button {
+    background-color: #ec4899;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin-left: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-item { width: 50%; }
+
+#header-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Food */
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.food-item {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    width: 240px;
+    text-align: left;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+.food-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Highlights */
+.highlights-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.highlight-item img {
+    border-radius: 12px;
+}
+
+/* Links */
+.links-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.link-item {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+/* RSVP Layout */
+.rsvp-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* Left */
+.rsvp-para {
+    width: 30%;
+}
+
+/* Middle */
+.rsvp-participants {
+    width: 30%;
+}
+
+/* Right */
+.rsvp-form-box {
+    width: 30%;
+    text-align: center;
+}
+
+/* Inputs */
+#rsvp-form input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Button fix */
+#rsvp-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: auto;
+}
+
+/* Error */
+.error {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
+/* Footer */
+.footer {
+    margin-top: 60px;
+    background-color: var(--accent-color-darkest);
+    color: white;
+    padding: 10px;
+}
+
+/* Colors */
+:root {
+    --bg-color: #fff7f5;
+    --text-color: #4b2e2e;
+    --accent-color-light: #fde2e4;
+    --accent-color-medium: #f9a8d4;
+    --accent-color-dark: #ec4899;
+    --accent-color-darkest: #9d174d;
+}
+
+/* Dark mode (FIXED ❗) */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+  color: #ffb6d9;
+}
+
+.dark-mode .food-item,
+.dark-mode .link-item,
+.dark-mode .highlight-item {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode .navbar ul {
+    background-color: #000;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0,0,0,0.4);
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+  padding: 40px;
+  width: 50%;
+  background-color: white;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.dark-mode .modal-container {
+  background-color: #333;
+  color: white;
+}
+
+/* HERO HEADER BACKGROUND */
+.header-container {
+  background-image: url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  border-radius: 12px;
+}
+
+/* dark overlay */
+.header-container::before {
+  background-color: rgba(0,0,0,0.6);
+}
+
+.header-overlay {
+  color: white;
+}
+
+.header-overlay h1 {
+  color: white;
+}
+
+.header-overlay h3 {
+  color: white;
+}
+
+/* text */
+.header-overlay {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.header-button {
+  margin: 5px;
+}

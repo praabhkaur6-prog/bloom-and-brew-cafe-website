@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bloom & Brew Café</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://fav.farm/🍽️">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+
+<!-- navbar -->
+<div class="navbar">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#food">Menu</a></li>
+    <li><a href="#highlights">Highlights</a></li>
+    <li><a href="#video">Video</a></li>
+    <li><a href="#links">Links</a></li>
+    <li><button id="theme-button">Theme🌙</button></li>
+  </ul>
+</div>
+
+<!-- ✅ UPDATED HEADER -->
+<div class="header-container">
+
+  <div class="header-overlay">
+    <h1>Bloom & Brew Café 🌸</h1>
+    <h3>Cozy plant-based café with coffee, comfort, and calm vibes ☕</h3>
+
+    <a href="#food">
+      <button class="header-button">View Menu</button>
+    </a>
+
+    <a href="#rsvp-form">
+      <button class="header-button">Book a Table</button>
+    </a>
+  </div>
+
+</div>
+
+<!-- About -->
+<h2 id="about">About Us</h2>
+<p>Bloom & Brew Café is a cozy vegetarian café in NYC 🌿</p>
+<p>We serve plant-based meals, coffee, and desserts made with love.</p>
+<p>Your perfect aesthetic study & relax spot ✨</p>
+
+<!-- HIGHLIGHTS -->
+<h2 id="highlights">Our Café Vibes ✨</h2>
+
+<div class="highlights-container">
+
+  <div class="highlight-item">
+    <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" width="300">
+    <p>Fresh plant-based meals made daily 🌿</p>
+  </div>
+
+  <div class="highlight-item">
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" width="300">
+    <p>Cozy coffee and aesthetic study space ☕</p>
+  </div>
+
+  <div class="highlight-item">
+    <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814" width="300">
+    <p>Relaxing and peaceful café environment ✨</p>
+  </div>
+
+</div>
+
+<!-- Food -->
+<h2 id="food">Our Menu</h2>
+
+<div class="food-container">
+
+  <div class="food-item">
+    <h3>🌿 Bowls</h3>
+    <ul>
+      <li>Avocado Bowl</li>
+      <li>Quinoa Bowl</li>
+      <li>Tofu Bowl</li>
+    </ul>
+  </div>
+
+  <div class="food-item">
+    <h3>☕ Drinks</h3>
+    <ul>
+      <li>Matcha Latte</li>
+      <li>Iced Coffee</li>
+      <li>Smoothie</li>
+    </ul>
+  </div>
+
+  <div class="food-item">
+    <h3>🍰 Desserts</h3>
+    <ul>
+      <li>Vegan Brownie</li>
+      <li>Chia Pudding</li>
+      <li>Banana Bread</li>
+    </ul>
+  </div>
+
+</div>
+
+<h2 id="specials">Today’s Specials & Offers 🌸</h2>
+
+<div class="food-container">
+
+  <div class="food-item">
+    <h3>☕ Morning Combo</h3>
+    <p>Any coffee + banana bread for $5</p>
+  </div>
+
+  <div class="food-item">
+    <h3>🍰 Sweet Deal</h3>
+    <p>Buy 1 dessert, get 1 half off</p>
+  </div>
+
+  <div class="food-item">
+    <h3>🌿 Student Special</h3>
+    <p>10% off for students 📚</p>
+  </div>
+
+</div>
+
+<!-- VIDEO -->
+<h2 id="video">Café Vibes 🎶</h2>
+
+<a href="https://www.youtube.com/watch?v=jK16RtNsixM" target="_blank">
+  <img src="https://img.youtube.com/vi/jK16RtNsixM/maxresdefault.jpg" width="500">
+</a>
+
+<p>Relax with cozy café vibes ☕✨</p>
+
+<!-- LINKS -->
+<h2 id="links">Explore Bloom & Brew 🌸</h2>
+
+<div class="links-container">
+
+  <div class="link-item">
+    <a href="https://www.pinterest.com/pin/45247171251056837/" target="_blank">
+      Our Full Menu
+    </a>
+    <p>Explore all our plant-based dishes.</p>
+  </div>
+
+  <div class="link-item">
+    <a href="https://www.google.com/maps?q=SoHo+New+York" target="_blank">
+      Visit Us📍
+    </a>
+    <p>Find our cozy café in the heart of NYC.</p>
+  </div>
+
+  <div class="link-item">
+    <a href="https://www.yelp.com/search?find_desc=plant+based+cafe&find_loc=New+York%2C+NY" target="_blank">
+      Customer Reviews 💖
+    </a>
+    <p>Loved by locals for cozy vibes and plant-based treats.</p>
+  </div>
+
+</div>
+
+<!-- RSVP -->
+<h2>Reserve Your Cozy Spot ☕</h2>
+
+<div class="rsvp-container">
+
+  <div class="rsvp-para">
+    <p>
+      Join us at Bloom & Brew Café for a cozy experience 🌸  
+      Enjoy coffee, desserts, and relaxing vibes.
+    </p>
+  </div>
+
+  <div class="rsvp-participants">
+    <h3>Total Guests: <span id="rsvp-count">3</span></h3>
+
+    <div id="participants-list">
+      <p>🌿 Emma from NY</p>
+      <p>🌿 Ava from NJ</p>
+      <p>🌿 Mia from CA</p>
+    </div>
+  </div>
+
+  <div class="rsvp-form-box">
+    <form id="rsvp-form">
+      <input type="text" id="name" placeholder="Your Name"><br><br>
+      <input type="text" id="state" placeholder="Your State"><br><br>
+      <input type="text" id="email" placeholder="Your Email"><br><br>
+      <button type="button" id="rsvp-button">Submit RSVP</button>
+    </form>
+  </div>
+
+</div>
+
+<!-- MODAL -->
+<div id="success-modal" class="modal">
+  <div class="modal-container">
+
+    <p id="modal-text">Thanks!</p>
+
+    <img id="modal-image"
+      src="https://media2.giphy.com/media/E4QqhsmUeJL9NVbq8V/giphy.gif"
+      width="120">
+  </div>
+</div>
+
+<div class="footer">
+  <p>© 2025 Bloom & Brew Café | Made with 💖</p>
+</div>
+
+</body>
+</html>
